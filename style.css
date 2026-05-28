@@ -1,65 +1,56 @@
+
+/* ===== 全体 ===== */
 body {
   font-family: sans-serif;
   background-color: #f5f5f5;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
   margin: 0;
 }
 
+/* ===== メインコンテナ ===== */
 .container {
-
+  position: relative;
   background: white;
-
-  width: 320px;
-
+  width: 90%;
+  max-width: 340px;
   padding: 30px;
-
   border-radius: 20px;
-
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-
   text-align: center;
 }
 
+/* ===== タイトル ===== */
 h1 {
   margin-bottom: 25px;
 }
 
+/* ===== 残高表示 ===== */
 .balance {
-  font-size: 32px;
+  font-size: 56px;
   font-weight: bold;
-
-  margin-bottom: 10px;
+  margin: 25px 0 15px;
+  color: #222;
 }
 
+/* ===== 食事回数 ===== */
 .meal-count {
   font-size: 20px;
-
   color: #666;
-
   margin-bottom: 25px;
 }
 
+/* ===== ボタン共通 ===== */
 button {
-
   width: 100%;
-
-  padding: 15px;
-
-  margin-top: 10px;
-
-  font-size: 18px;
-
+  padding: 18px;
+  margin-top: 12px;
+  font-size: 20px;
   border: none;
-
-  border-radius: 12px;
-
+  border-radius: 14px;
   cursor: pointer;
-
   transition: 0.2s;
 }
 
@@ -67,29 +58,55 @@ button:hover {
   transform: scale(1.02);
 }
 
+/* ===== チャージボタン ===== */
 .charge-button {
   background-color: #4caf50;
   color: white;
 }
 
+/* ===== 食べたボタン ===== */
 .meal-button {
   background-color: #ff7043;
   color: white;
 }
 
-input {
-
-  width: 100%;
-
-  padding: 12px;
-
-  font-size: 18px;
-
-  margin-bottom: 10px;
-
-  border-radius: 10px;
-
-  border: 1px solid #ccc;
-
-  box-sizing: border-box;
+/* ===== 設定ボタン（右上） ===== */
+.settings-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #eee;
+  font-size: 24px;
 }
+
+/* ===== 設定トグル ===== */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+/* チェックボックス拡大 */
+input[type="checkbox"] {
+  transform: scale(1.6);
+  margin: 0;
+}
+
+/* ===== 警告表示（使うなら） ===== */
+#warning {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+
+
