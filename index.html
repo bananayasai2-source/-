@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>学食残高チェッカー</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>学食残高</h1>
+
+    <input
+      type="number"
+      id="inputBalance"
+      placeholder="残高を入力"
+    >
+
+    <button onclick="setBalance()">
+      残高を設定
+    </button>
+
+    <div class="balance" id="balance">
+      残高: 0円
+    </div>
+
+    <div class="meal-count" id="meal">
+      あと0食
+    </div>
+
+    <h2>チャージ</h2>
+
+    <button class="charge-button" onclick="charge(1000)">
+      +1000円
+    </button>
+
+    <button class="charge-button" onclick="charge(2000)">
+      +2000円
+    </button>
+
+    <button class="charge-button" onclick="charge(3000)">
+      +3000円
+    </button>
+
+    <button class="charge-button" onclick="charge(5000)">
+      +5000円
+    </button>
+
+    <h2>学食</h2>
+
+    <button class="meal-button" onclick="eatMeal()">
+      学食を食べた (-350円)
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
